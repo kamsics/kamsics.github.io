@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 행사</title>
+    
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+
+    <style>
+        *{font-family: 'NanumBarunGothic';
+        box-sizing: border-box;
+        margin: 0;
+        
+        background-color: rgb(36, 36, 36);
+        color: rgb(255, 255, 255);}
+
+        #section {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;}
+
+        #sectionh{font-weight: lighter;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 1.5em 0;}
+
+        .purple{color: rgb(189, 230, 9);}
+        
+        #ulist {list-style: none;
+        padding: 0;}
+
+        .list {display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        position: relative;}
+
+        .imgbox  {border-radius: 15px;
+        overflow: hidden;}
+
+        .img {width: 100%;
+        display: block;}
+
+        .img:hover {transform: scale(103%);
+        transition: 0.3s;}
+
+        .bottom {margin-top: 10px;
+        line-height: 1.5em;}
+
+        .top {position: absolute;
+        top: 0;
+        padding: 0.3em;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: rgb(144, 22, 214);
+        text-shadow:1px 1px 3px rgb(136, 136, 136);}
+
+        /*태블릿(850px 이하)*/
+        @media screen and (max-width: 850px){
+          .list {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        /*휴대폰(450px 이하)*/
+        @media screen and (max-width: 450px){
+          .list {
+            grid-template-columns: 1fr;
+          }
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <section id="section">
+
+    <h2 id="sectionh">
+        <span class="purple">오늘의 행사</span>
+        놓치지 마세요!
+    </h2>
+
+       <ul id="ulist" class="list">
+  <li>
+    <div class="imgbox">
+      <img src="images/thumb01.jpg" alt="사진1" class="img">
+    </div>
+    <p class="bottom">뉴트리코어 건강식품 ~56% 초특가</p>
+    <p class="top">브랜드DAY</p>
+  </li>
+
+  <li>
+    <div class="imgbox">
+      <img src="images/thumb02.jpg" alt="사진2" class="img">
+    </div>
+    <p class="bottom"><span class="purple">추가 적립</span> 하기스 기저귀 외 ~55%↓</p>
+    <p></p>
+  </li>
+
+  <li>
+    <div class="imgbox">
+      <img src="images/thumb03.jpg" alt="사진3" class="img">
+    </div>
+    <p class="bottom">마크모크 신발 30% 추가 할인</p>
+    <p class="top">쇼핑LIVE</p>
+  </li>
+
+  <li>
+    <div class="imgbox">
+      <img src="images/thumb04.jpg" alt="사진4" class="img">
+    </div>
+    <p class="bottom">25년 서머 페스타 단 하루 ~6,900원</p>
+    <p class="top">오늘끝딜</p>
+  </li>
+</ul>
+
+    </section>
+    
+</body>
+</html>
