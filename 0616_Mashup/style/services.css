@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*services*/
+#listbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.list > img {
+    width: 100%;
+    display: block;
+}
