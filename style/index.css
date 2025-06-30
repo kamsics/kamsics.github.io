@@ -1,0 +1,616 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}/*지마켓 폰트*/
+
+*{
+    font-family: "Noto Sans KR", sans-serif;          /*기본폰트*/
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    margin: auto;
+}
+
+#allnavi {
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: fixed;
+
+    background-color: #ffffff ;
+    box-shadow: 0 1px 5px rgb(143, 143, 143);
+
+    z-index: 10;
+}
+
+#navi1 {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+
+#hdul1 {
+    display: flex;
+    justify-content: center;
+}
+
+#logoimg {
+    display: block;
+    padding: 15px;
+}
+
+.hdlist1 {
+}
+
+#hdul1_1 {
+    display: flex;
+    justify-content: end;
+
+    transform: translateY(-24px);
+}
+
+.menu1 {
+    color: black;
+    
+    padding: 30px;
+}
+
+.menu1:hover {
+    text-decoration: underline;
+}
+
+#navi2 {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+
+    background-color: white;
+}
+
+#hdul2 {
+    display: flex;
+    justify-content: center;
+}
+
+#hdlist2 {
+
+}
+
+.menu2 {
+    color: black;
+
+    font-size: 1.2rem;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+
+    padding: 0 70px;
+
+    position: relative; /* 💡 기준 지정 */
+    display: inline-block; /* 💡 컨텐츠 너비에 맞추기 */
+
+    transition: 0.3s;
+}
+
+.hulist2:hover > .menu2 {
+    color: #16544B;
+}
+
+.menu2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 3px;
+    background-color: #16544B;
+
+    transition:0.3s ease;
+}
+
+.menu2:hover::after {
+    width: 100%;
+}
+
+#videobox {
+    margin-top: 150px;
+}
+
+#hdbutton {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.hdbutton {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 350px;
+    height: 100px;
+    border: none;
+    
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#hdbutton1 {
+    background-color: #E8CF54;
+}
+
+#hdbutton2 {
+    background-color: #ecc1d5;
+}
+
+#hdbutton1:hover, #hdbutton2:hover {
+    background-color: #16544B;
+    color: white;
+}
+
+#sec1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sectitle {
+    font-family: 'GmarketSansMedium';
+    font-size: 2.5rem;
+}
+
+.minilogo {
+    width: 50px;
+    transform: translateY(11px);
+}
+
+#secnavi {
+    display: flex;
+    justify-content: end;
+
+    transform: translateY(-30px);
+}
+
+.secmenu {
+    padding: 0 20px;
+
+    color: rgb(56, 56, 56);
+}
+
+#secul {
+    width: 100%;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.seclist2 {
+    transition: 0.3s;
+
+
+    cursor: pointer;
+}
+
+.secimg {
+    width: 100%;
+    display: block;
+
+    transition: 0.3s;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.seclist2:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 3rem;
+    color: rgb(187, 187, 187);
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#lefticon {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#righticon {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.icon:hover {
+    color: #16544B;
+}
+
+/*sec2*/
+#sec2 {
+    width: 100%;
+    height: 500px;
+    margin: 100px auto;
+
+    background-color: rgb(231, 231, 231);
+}
+
+#round {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+    border-radius: 50px 0;
+    overflow: hidden;
+    
+    transform: translateY(50px);
+}
+
+.secul2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.seclist3 {
+    height: 400px;
+    background-color: rgb(250, 250, 250);
+}
+
+#secimg2 {
+    width: 100%;
+    height: 400px;
+    display: block;
+    
+}
+
+#secbox {
+    position: relative;
+}
+
+#titlebox {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+width: 100%;
+height: 100%;
+
+background-color: rgba(255, 255, 255, 0.6);
+
+cursor: pointer;
+}
+
+#titlebox2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+background-color: rgba(255, 255, 255, 0.6);
+
+white-space: nowrap;
+padding: 20px;
+
+text-align: center;
+color: #16544B;
+
+cursor: pointer;
+}
+
+#sectitle {
+    font-size: 2rem;
+    font-family: 'GmarketSansMedium';
+
+    line-height: 50px;
+}
+
+#text {}
+
+.seclist3 {
+}
+
+#secbox2 {
+}
+
+#secul3 {
+white-space: nowrap;
+
+margin-top: 110px;
+}
+
+.text1, .text2 {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 3rem;
+
+    padding: 10px;
+
+    transition: 0.3s;
+}
+
+.text2 {
+    color: grey;
+}
+
+.text1:hover {
+    color: #16544B;
+    text-decoration: underline;
+}
+
+.text2:hover {
+    text-decoration: underline;
+}
+
+/*sec3*/
+#sec3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    margin-bottom: 20px;
+}
+
+#secul4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.seclist5 {
+    cursor: pointer;
+}
+
+.seclist5 h3, .seclist5 p {
+    text-align: start;
+    
+    transform: translate(100px, -70px);
+}
+
+
+/*푸터*/
+
+#footer {
+    width: 100%;
+    background-color: #16544B;
+}
+
+#footerbox {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding:10px;
+    line-height: 2rem;
+
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+.fttext {
+    color: white;
+    line-height: 3rem;
+}
+
+.text3 {
+    color: rgb(201, 201, 201);
+    text-align: start;
+}
+
+.icon2 {
+    font-size: 2rem;
+    color: rgb(201, 201, 201);
+    
+    padding: 5px;
+}
+
+#hamburger {
+    line-height: 50px;
+    width: 50px;
+
+    color: #16544B;
+
+    font-size: 3rem;
+    margin-left: 30px;
+    
+    cursor: pointer;
+    z-index: 20;
+
+    display: none;
+}
+
+/*850 이하 태블릿 반응형*/
+@media screen and (max-width: 850px) {
+    #header {
+        max-width: 850px;
+    }
+
+    #video {
+        display: none;
+    }
+
+    .menu2 {
+    white-space: nowrap;
+    padding: 0 40px;
+    }
+
+    #hdbutton {
+        margin-top: 50px;
+    }
+
+    .hdbutton {
+        width: 300px;
+        height: 80px;
+    }
+
+    #sec2 {
+        height: 100%;
+    }
+
+    #secul {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+
+    #lefticon {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(-50%, -50%);
+    }
+
+    #righticon {
+        position: absolute;
+        top: 50%;
+        right: -150px;
+        transform: translate(-50%, -50%);
+    }
+
+    #titlebox {
+        width: 100%;
+        height: 100%;
+    }
+
+    #round {
+        height: 500px;
+    }
+
+    .seclist2 {
+        margin-top: 20px;
+    }
+
+    #sec3 {
+        padding: 10px;
+    }
+
+    #secul4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footerbox {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        border: 1px solid #000;
+    }
+}
+
+/*450 이하 모바일 반응형*/
+@media screen and (max-width :450px) {
+    #hamburger {
+        display: block;
+        margin-right: auto;
+    }
+
+    #navi2 {
+        width: 100vh;
+        height: 100vh;
+        background-color: #ffffff ;
+        
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+    
+    #hdul1_1 {
+        transform: translateY(10px);
+    }
+
+    #hdul2 {
+        display: block;
+    }
+
+    #navi2 {
+        display: none;
+    }
+    
+    .menu2 {
+        padding: 30px;
+        font-size: 1.2rem;
+        color: #16544B;
+        text-align: start;
+        display: block;
+    }
+
+    .menu2:hover::after {
+        width: 0%;
+    }
+
+    .menu2:hover {
+        background-color: #16544B;
+        color: white;
+    }
+
+    #hdbutton {
+       gap: 10px;
+       padding-bottom: 30px;
+    }
+
+    #secnavi {
+        display: none;
+    }
+
+    #secul {
+        grid-template-columns: 1fr;
+    } 
+
+    .secul2 {
+        grid-template-columns: 1fr;
+    }
+
+    #secul3 {
+        margin-top: 10px;
+    }
+
+    #sec2 {
+        height: 700px;
+    }
+
+    #round {
+        height: 600px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #secul4 {
+        grid-template-columns: 1fr;
+    }
+}
